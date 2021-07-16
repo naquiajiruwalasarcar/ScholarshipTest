@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:variable name="m_nCourseId" select="CourseInformationData/m_nCourseId" />
+	<xsl:template match="/">
+		<html>
+			<body>
+				<table class="zenith">
+					<tr>
+			 			<td class="xslt_fieldHeader" colspan="2">Course Information Details</td>
+					</tr>
+					<tr>
+						<td width="50%" valign="top">
+							<table class="zenith" cellSpacing="5px">
+								<tr>
+									<td class="xslt_fieldHeading">
+										Short Course Name:
+									</td>
+									<td class="xslt_fieldData" id="m_strShortCourseName">
+										<xsl:value-of select="CourseInformationData/m_strShortCourseName" />
+									</td>
+								</tr>
+								<tr>
+									<td class="xslt_fieldHeading">
+										Long Course Name :
+									</td>
+									<td class="xslt_fieldData" id="m_strLongCourseName">
+										<xsl:value-of select="CourseInformationData/m_strLongCourseName" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>

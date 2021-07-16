@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+     <title>
+      Course Information
+     </title>
+ </head>
+<body>
+<form class="zenith" id="courseInfo_form_id" style="width:500px;">
+		<table class="zenith"  summary="">
+			<tr>
+				  <td class="formHeading" style="width:500px;">
+					Course Information
+				  </td>
+			</tr>
+			<tr>
+				  <td class="zenith">
+				  <fieldset>
+                  <legend>
+				  Course Details
+				  </legend>
+					<table  summary="" cellspacing = "10px">
+					<tr>
+					  <td class="fieldHeading">Short Course Name <em>*</em></td>
+					  <td>
+                         <input 
+                             type="text"
+                             maxlength="40"
+                             id="courseInfo_input_shortcourseName"
+                             data-options="required:true"
+                             style = "width:150px;"
+                             class="zenith easyui-validatebox"/>
+                      </td>                              
+					</tr>
+					<tr>
+					  <td class="fieldHeading"> Long Course Name <em>*</em></td>
+					  <td>
+                         <input 
+                             type="text"
+                             maxlength="100"
+                             id="courseInfo_input_longcourseName"
+                             style = "width:300px;"
+                             data-options="required:true"
+                             class="zenith easyui-validatebox"/>
+                      </td>                              
+					</tr>
+					<tr>
+					 <td class="fieldHeading">Final Year</td>
+					 <td>
+					   <input id="courseInfo_input_finalYear_yes"
+					   		 name="courseInfo_FinalYear"  
+					   		type="radio" value="true" 
+					   		 data-options="required:true"
+							  class="easyui-validatebox"
+					   /> Yes
+					   <input id="courseInfo_input_finalYear_no"
+					      name="courseInfo_FinalYear"
+					       type="radio" value="false"  checked 
+					       data-options="required:true"
+					   	 class="easyui-validatebox"/> No
+					 </td>
+					</tr>				
+					</table>
+				  </td>
+			</tr>
+			<tr>
+			  <td align="right" colspan="2">
+				<hr>
+				<button 
+					id="courseInfo_button_submit"
+					type="button"
+					class="zenith"
+					update="false"
+					onclick="courseInfo_submit()">
+				  Create
+				</button>
+				 <button id="courseInfo_button_cancel" type="button" class="zenith" onclick="courseInfo_cancel()">
+				  Cancel
+				 </button>
+			  </td>
+          </tr>
+	   </table>
+</form>
+</body>
+</html>

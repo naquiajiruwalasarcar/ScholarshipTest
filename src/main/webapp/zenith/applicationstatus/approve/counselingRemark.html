@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+     <title>
+     Counseling Remark Information
+     </title>
+ </head>
+ <body>
+ 	<form class ="zenith" id="counselingRemarkForm" style="width: 500px;">
+ 		<table class="zenith" summary="">
+ 			<tr>
+ 				<td class="formHeading" style="width: 500px;">
+ 					Counseling Remark Information
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td class="zenith">
+ 					<fieldset>
+ 						<legend>
+ 						Counseling	Remark Details
+ 						</legend>
+ 							<table cellspacing="10px" summary="">
+	 							<tr>
+	 								<td class="fieldHeading">
+	 									Remark <em>*</em>
+	 								</td>
+	 								<td>
+	 									<textarea 
+						                            id="counselingRemarkInfo_input_Remark"
+						                            rows="2"
+						                            cols="40"  
+						                            maxlength="200"
+						                            class="zenith easyui-validatebox"
+						                            data-options="required:true"></textarea>
+	 								</td>
+	 							</tr>
+	 							<tr>
+	 							   <td class=""fieldHeading">
+	 							      Counseling Date <em>*</em>
+	 							   </td>
+	 							   <td>
+	 							   <input type="date" id="studentInfo_input_counselingDate"  class="zenith easyui-validatebox" data-options="required:true" style="width: 140px;">
+	 							   </td>
+	 							</tr> 							
+ 							</table>
+ 					</fieldset>
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td align="right" colspan="2">
+ 					<hr>
+ 					<button type="button" style="width:100px;margin-right: 10px;" class = "zenith" id="counseling" title="counseling" onClick="counselingRemarkInfo_Submit()">
+ 					Counseling
+ 					</button>
+				  	
+					<button id="counselingInfo_button_cancel" type="button" class="zenith" onclick="counselingRemarkInfo_cancel()">
+				  		Cancel
+					</button>
+ 				</td>
+ 			</tr> 		
+ 		</table>
+ 	</form> 
+ </body>
+</html>

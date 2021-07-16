@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>
+     Disburse Cheque Information List
+    </title>
+  </head>
+  <body>
+    <form class="zenith" id="disburseChequeListInfo_form_id">
+      <table class="zenith" id="disburseChequeList_table_filter" summary="">
+        <tr>
+          <td class="zenith">
+            <div class="zenith" id="disburseChequeList_div_dataGridToolbar">
+              <table class="zenith" cellpadding="2" cellspacing="2" summary="">
+                <tr>
+                	<td style="width:4%">
+                    	<select id="selectDisburseacademicyear" class="zenith">                    		
+                    	</select>
+                  </td>
+                     <td class="zenith" style="width:15%">
+                    <input 
+                        class="filterTextBox"
+                        id="filterStudentInfo_input_studentUID"
+                        onkeypress="handleStudentDataFilter('#filterStudentInfo_input_studentUID');validateNumber(this)"
+                        placeholder="Student UID"
+                        maxlength="4"/>
+                  </td>
+                          <td class="zenith" style="width:15%">
+                    <input 
+                        class="filterTextBox"
+                        id="filterStudentInfo_input_studentName"
+                        onkeypress="handleStudentDataFilter('#filterStudentInfo_input_studentName')"
+                        placeholder="Student Name"/>
+                  </td>
+     			<td class="zenith" style="width:15%">
+                     <input 
+                        class="filterTextBox"
+                        id="filterStudentInfo_input_phonenumber"
+                        onkeypress="handleStudentDataFilter('#filterStudentInfo_input_phonenumber');validateNumber(this)"
+                        placeholder="Phone Number"
+                        maxlength="10"/>
+                  </td>
+                  <td class="zenith" style="width:15%">
+                    <input 
+                        class="filterTextBox"
+                        id="filterStudentInfo_input_aadhar"
+                        onkeypress="handleStudentDataFilter('#filterStudentInfo_input_aadhar');validateNumber(this)"
+                        placeholder="Student Aadhar"
+                        maxlength="16"/>
+                  </td>
+                  <td class="zenith" style="width:5%">
+                    <button class="zenith filterButton" id="student_filter_button_id" type="button" onclick="studentListInfo_filter (disburseChequeList_table_students,'cheque prepared','selectDisburseacademicyear')">
+                      Filter
+                    </button>
+                  </td>
+                              
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="zenith">
+            <div id="disburseChequeList_div_horizontalSplitter" style="z-index: 0">
+              <div id="disburseChequeList_div_dataGrid">
+                <table 
+                    id="disburseChequeList_table_students"
+                    class="easyui-datagrid"
+                    title="Disburse Cheque Information List"
+                    data-options="striped:true, pagination:true, pagesize:15, rownumbers:true, fitColumns:true, remoteSort:false, singleSelect:true, toolbar:'#disburseChequeList_div_dataGridToolbar'">
+
+                </table>
+              </div>
+              <div class="gridDetails" id="disburseChequeList_div_listDetail">
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

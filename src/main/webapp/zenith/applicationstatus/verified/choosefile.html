@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form class="zenith" id="chooseFileForm" style="width: 469px;">
+		<table class="zenith" summary="">
+			<tr>
+ 				<td class="formHeading" style="width: 469px;">
+ 					Verify Student 
+ 				</td>
+ 			</tr>
+			<tr>
+				<td class="zenith">
+					<fieldset>
+						<legend> Upload Scan Document </legend>
+						<table width="100%" cellspacing="10">
+							<tr>
+								<td valign="top" width="33.3%">
+									<input name="studentdocument" type="file"	id="ScanCopy" onchange="scanImage(inputDocument,ScanCopy,scanDocument_td,verifyStudent)"/>		
+								</td>
+								 <td><a href="javascript:studentuploadScan_documentPreview (inputDocument);">
+		 			       		 <img id="inputDocument" src="#" alt="" style="height: 80px;"/>
+		 			       		 </a>
+	 			       		  </td>
+							</tr>
+							<tr>
+				              <td class="fieldHeading">Payment Type <em>*</em></td>
+				               <td>
+				                  <input type="radio" id="select_radio_Cheque" name="select_radio" value="Cheque" data-options="required:true" checked="checked"/>Cheque                    		
+				                  <input type="radio" id="select_radio_DD" name="select_radio" value="DD" data-options="required:true" style="margin-left: 25px;"/>DD
+				               </td>
+				           </tr>
+				           <tr>
+								<td class="fieldHeading">Cheque Favourof<em>*</em></td>
+								<td><select id="select_cheque_inFavour_of"></select></td>
+							</tr>
+							<tr>
+							<td class="fieldHeading">Remarks</td>
+							 <td>
+								<textarea type="text"  rows="4" cols="25" maxlength="200" id="studentVerify_input_remarks" name="studentRemarks"></textarea> 
+							 </td>
+							</tr>
+							<tr style="text-align: right;">
+		     					 <td id="verifyProgress" style="display:none">
+                  					 <div class="progress">
+		            					 <img src="images/processing.gif">
+		           					</div>                      
+		    						</td>
+							</tr>
+							<tr>
+								<td>
+									<button id="chooseFileDocument_button_cancel" type="button"
+									class="zenith" onclick="chooseFileDocument_cancel()">
+									Cancel</button>
+								</td>
+								<td id="scanDocument_td">
+									<button type="button"  disabled="true" width="20" align="center"  class = "zenith addButton" style="width:100px;color: grey;" 
+									id="verifyStudent" title="Verify" onClick="verifyStudentInfo_Student()">Verify</button>
+								</td>
+							</tr>
+						</table>
+				 	 </fieldset>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
