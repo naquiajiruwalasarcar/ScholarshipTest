@@ -19,7 +19,7 @@ public class MasterDatabaseConfigProperties
 	/** database username */
 	private String username = "admin";
 	/** database password */
-	private String password = "TechMust!";
+	private String password = "TechMust";
 	/** database driver */
 	private String driverClassName = "com.mysql.cj.jdbc.Driver";
 	// Following are for setting the Hikari Connection Pool properties. Spring
