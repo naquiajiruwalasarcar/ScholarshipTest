@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserManagementDefaults>
+  <AdminUser>
+    <LoginId>admin</LoginId>
+    <Password>admin</Password>
+    <UserName>Administrator</UserName>
+    <Email>madhu@techmust.com</Email>
+    <DateofBirth>1999-05-30</DateofBirth>
+     <Gender>male</Gender>
+     <Address>Banglore</Address>
+     <PhoneNumber>9864767432</PhoneNumber>
+      <EmployeeID>100</EmployeeID>
+  </AdminUser>
+  <root>
+<ActionArea name = "User Management" SequenceId="10">
+	<Actions>
+      <Action>
+         <ActionName>User List</ActionName>
+         <Target>navigate('userList','widgets/usermanagement/userinfo/listUserInfo.js')</Target>
+         <SequenceId>10</SequenceId>
+       </Action>
+        <Action>
+          <ActionName>New User</ActionName>
+          <Target>navigate('newuser','widgets/usermanagement/userinfo/newUserInfo.js')</Target>
+          <SequenceId>20</SequenceId>
+        </Action>
+         <Action>
+          <ActionName>New Role</ActionName>
+          <Target>navigate('newRole','widgets/usermanagement/role/newRole.js')</Target>
+          <SequenceId>30</SequenceId>
+        </Action>
+         <Action>
+           <ActionName>Role List</ActionName>
+           <Target>navigate('roleList','widgets/usermanagement/role/listRole.js')</Target>
+           <SequenceId>40</SequenceId>
+        </Action>
+        <Action>
+           <ActionName>New Action Area</ActionName>
+           <Target>navigate('newActionArea','widgets/usermanagement/actionarea/newActionArea.js')</Target>
+           <SequenceId>50</SequenceId>
+        </Action>
+        <Action>
+           <ActionName>Action Area List</ActionName>
+           <Target>navigate('actionAreaList','widgets/usermanagement/actionarea/listActionArea.js')</Target>
+           <SequenceId>60</SequenceId>
+        </Action>
+          <Action>
+           <ActionName>New Action</ActionName>
+           <Target>navigate('newAction','widgets/usermanagement/action/newAction.js')</Target>
+           <SequenceId>70</SequenceId>
+        </Action>
+        <Action>
+           <ActionName>Action List</ActionName>
+           <Target>navigate('ActionList','widgets/usermanagement/action/listAction.js')</Target>
+           <SequenceId>80</SequenceId>
+        </Action>
+        <Action>
+           <ActionName>Facilitators</ActionName>
+           <Target>navigate('ActionList','widgets/usermanagement/facilitator/listFacilitatorInfo.js')</Target>
+           <SequenceId>90</SequenceId>
+        </Action>
+         <Action>
+           <ActionName>Facilitators Report</ActionName>
+           <Target>navigate('ActionList','widgets/usermanagement/action/listReports.js')</Target>
+           <SequenceId>100</SequenceId>
+        </Action>
+     </Actions>
+   </ActionArea>
+   <ActionArea name = "Scholarship Management"  SequenceId="20">
+		<Actions>
+		    <Action>
+				<ActionName>Academic Year List</ActionName>
+				<Target>navigate ('AcademicYearList','widgets/scholarshipmanagement/academicyear/newAcademicYear.js')</Target>
+				<SequenceId>10</SequenceId>
+			</Action>			
+			<Action>
+				<ActionName>Student List</ActionName>
+				<Target>navigate ('Studentlist','widgets/scholarshipmanagement/studentlist/listStudent.js')</Target>
+				<SequenceId>30</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Institution List</ActionName>
+				<Target>navigate ('listinstitution','widgets/scholarshipmanagement/institutionslist/listInstitution.js')</Target>
+				<SequenceId>40</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Course List</ActionName>
+				<Target>navigate ('courselist','widgets/scholarshipmanagement/courselist/listCourses.js')</Target>
+				<SequenceId>50</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Scholarship List</ActionName>
+				<Target>navigate ('scholarshiplist','widgets/scholarshipmanagement/scholarshiplist/scholarshiplist.js')</Target>
+				<SequenceId>60</SequenceId>
+			</Action>
+			<Action>
+			    <ActionName>Transaction</ActionName>
+			    <Target>navigate('transactionlist','widgets/scholarshipmanagement/transaction/transactionlist.js')</Target>
+			    <SequenceId>70</SequenceId>
+			</Action>						
+		</Actions> 
+	</ActionArea>
+	<ActionArea name = "Application Status"  SequenceId="30">
+		<Actions>
+			<Action>
+				<ActionName>New Student</ActionName>
+				<Target>navigate ('newStudent','widgets/scholarshipmanagement/studentlist/newStudentInfo.js')</Target>
+				<SequenceId>10</SequenceId>
+			</Action>
+		    <Action>
+				<ActionName>To Be Verified</ActionName>
+				<Target>navigate ('verified','widgets/applicationstatus/verified/verifiedlist.js')</Target>
+				<SequenceId>20</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>To Be Approved</ActionName>
+				<Target>navigate ('approve','widgets/applicationstatus/approve/approvelist.js')</Target>
+				<SequenceId>30</SequenceId>
+			</Action>			
+			<Action>
+				<ActionName>Prepare Cheque</ActionName>
+				<SequenceId>40</SequenceId>
+				<Target>navigate ('preparecheque','widgets/applicationstatus/preparecheque/prepareChequelist.js')</Target>
+			</Action>
+			<Action>
+				<ActionName>Disburse of Cheque</ActionName>
+				<Target>navigate ('disspersed','widgets/applicationstatus/disbursecheque/disbursechequelist.js')</Target>
+				<SequenceId>50</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>To Be Claimed</ActionName>
+				<Target>navigate ('tobeclaimcheque','widgets/applicationstatus/ChequeDetails/toBeClaimedChequeList/toBeClaimchequelist.js')</Target>
+				<SequenceId>60</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Claimed List</ActionName>
+				<Target>navigate ('claimedList','widgets/applicationstatus/ChequeDetails/claimedChequeList/claimedChequeList.js')</Target>
+				<SequenceId>70</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Make Tatkal</ActionName>
+				<Target>navigate ('tatkal','widgets/tatkal/tatkalList.js')</Target>
+				<SequenceId>80</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Counseling List</ActionName>
+				<Target>navigate ('counseling','widgets/applicationstatus/counseling/counseling.js')</Target>
+				<SequenceId>80</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Activity Log</ActionName>
+				<Target>navigate ('activitylog','widgets/activitylog/activityLogList.js')</Target>
+				<SequenceId>90</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Rejected List</ActionName>
+				<Target>navigate ('rejected','widgets/applicationstatus/rejectedlist/rejectedlist.js')</Target>
+				<SequenceId>100</SequenceId>
+			</Action>
+			<Action>
+				<ActionName>Activity Log</ActionName>
+				<Target>navigate ('activitylog','widgets/activitylog/activityLogList.js')</Target>
+				<SequenceId>110</SequenceId>
+			</Action>											
+		</Actions> 
+	</ActionArea>
+	<ActionArea name="Reports" SequenceId="40">
+		<Actions>
+			<Action>
+				<ActionName>Facilitator-wise</ActionName>
+				<Target>navigate ('facilitatorWise','widgets/Reports/facilitatorReports.js')</Target>
+				<SequenceId>10</SequenceId>
+			</Action>
+		</Actions>
+	</ActionArea>
+</root>  
+</UserManagementDefaults>
